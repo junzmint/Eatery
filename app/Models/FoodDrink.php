@@ -23,4 +23,9 @@ class FoodDrink extends Model
     {
         return $this->belongsToMany(User::class, 'favourites');
     }
+
+    public function eateries()
+    {
+        return $this->belongsToMany(Eatery::class, 'menu');
+    }
 }
