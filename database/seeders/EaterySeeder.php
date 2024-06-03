@@ -65,12 +65,12 @@ class EaterySeeder extends Seeder
         $eatery->foodDrinks()->attach($foodDrink);
 
         Eatery::create([
-            'name' => 'Cơm tấm Bách Khoa',
+            'name' => 'Cơm thố Bách Khoa',
             'location' => '320 Trần Đại Nghĩa, Hai Bà Trưng, Hà Nội',
             'rating' => 4.3,
         ]);
-        $eatery = Eatery::where('name', 'Cơm tấm Bách Khoa')->first();
-        $foodDrink = FoodDrink::where('name', 'Cơm tấm')->first();
+        $eatery = Eatery::where('name', 'Cơm thố Bách Khoa')->first();
+        $foodDrink = FoodDrink::where('name', 'Cơm thố')->first();
         $eatery->foodDrinks()->attach($foodDrink);
 
         Eatery::create([
@@ -115,6 +115,8 @@ class EaterySeeder extends Seeder
         $foodDrink = FoodDrink::where('name', 'Sinh tố')->first();
         $eatery->foodDrinks()->attach($foodDrink);
         $foodDrink = FoodDrink::where('name', 'Trà')->first();
+        $eatery->foodDrinks()->attach($foodDrink);
+        $foodDrink = FoodDrink::where('name', 'Latte')->first();
         $eatery->foodDrinks()->attach($foodDrink);
 
         Eatery::create([

@@ -17,7 +17,7 @@ class FoodDrinkSeeder extends Seeder
             ['name' => 'Bún chả', 'type' => 'food'],
             ['name' => 'Gỏi cuốn', 'type' => 'food'],
             ['name' => 'Bánh mì', 'type' => 'food'],
-            ['name' => 'Cơm tấm', 'type' => 'food'],
+            ['name' => 'Cơm thố', 'type' => 'food'],
             ['name' => 'Bún bò Huế', 'type' => 'food'],
             ['name' => 'Mì Quảng', 'type' => 'food'],
             ['name' => 'Bánh xèo', 'type' => 'food'],

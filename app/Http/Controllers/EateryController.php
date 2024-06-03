@@ -13,7 +13,7 @@ class EateryController extends Controller
      */
     public function index()
     {
-        return Eatery::with('foodDrinks')->get();
+        return Eatery::with('foodDrinks')->with('media')->get();
     }
 
     /**
@@ -21,7 +21,7 @@ class EateryController extends Controller
      */
     public function topRated()
     {
-        return Eatery::with('foodDrinks')->orderBy('rating', 'desc')->take(5)->get();;
+        return Eatery::with('foodDrinks')->with('media')->orderBy('rating', 'desc')->take(5)->get();;
     }
 
     /**
@@ -46,7 +46,7 @@ class EateryController extends Controller
         // Get the eateries that have these food and drinks
         $eateries = Eatery::whereHas('foodDrinks', function ($query) use ($favouriteFoodDrinks) {
             $query->whereIn('food_drinks.id', $favouriteFoodDrinks);
-        })->with('foodDrinks')->get();
+        })->with('foodDrinks')->with('media')->get();
 
         return response()->json($eateries);
     }

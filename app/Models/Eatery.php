@@ -19,4 +19,9 @@ class Eatery extends Model
     {
         return $this->belongsToMany(FoodDrink::class, 'menu');
     }
+
+    public function media()
+    {
+        return $this->hasMany(Media::class);
+    }
 }
