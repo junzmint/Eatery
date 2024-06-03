@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FoodDrinkController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::get('/hello', function () {
 });
 
 Route::get('food_drinks', [FoodDrinkController::class, 'index'])->name('food_drinks.index');
+
+Route::post('users/profile', [UserController::class, 'profile'])->name('users.profile');

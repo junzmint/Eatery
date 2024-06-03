@@ -22,9 +22,6 @@ class FoodDrinkSeeder extends Seeder
             ['name' => 'Cao lầu', 'type' => 'food'],
             ['name' => 'Mì Quảng', 'type' => 'food'],
             ['name' => 'Bánh xèo', 'type' => 'food'],
-            ['name' => 'Trà sữa', 'type' => 'drink'],
-            ['name' => 'Cà phê', 'type' => 'drink'],
-            ['name' => 'Nước mía', 'type' => 'drink'],
             ['name' => 'Bánh cam', 'type' => 'food'],
             ['name' => 'Bánh chưng', 'type' => 'food'],
             ['name' => 'Nem rán/Chả giò', 'type' => 'food'],
@@ -33,6 +30,14 @@ class FoodDrinkSeeder extends Seeder
             ['name' => 'Thịt kho tàu', 'type' => 'food'],
             ['name' => 'Cá kho tộ', 'type' => 'food'],
             ['name' => 'Lẩu', 'type' => 'food'],
+            ['name' => 'Trà sữa', 'type' => 'drink'],
+            ['name' => 'Cà phê', 'type' => 'drink'],
+            ['name' => 'Nước mía', 'type' => 'drink'],
+            ['name' => 'Trà', 'type' => 'drink'],
+            ['name' => 'Freeze', 'type' => 'drink'],
+            ['name' => 'Sinh tố', 'type' => 'drink'],
+            ['name' => 'Wine', 'type' => 'drink'],
+            ['name' => 'Latte', 'type' => 'drink'],
         ]);
     }
 }

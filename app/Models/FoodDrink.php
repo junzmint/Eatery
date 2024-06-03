@@ -18,4 +18,9 @@ class FoodDrink extends Model
         'name',
         'type',
     ];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'favourites');
+    }
 }
