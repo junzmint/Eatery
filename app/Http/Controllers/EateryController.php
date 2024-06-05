@@ -64,7 +64,13 @@ class EateryController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $eatery = Eatery::with(['foodDrinks', 'media', 'reviews'])->find($id);
+
+        if (!$eatery) {
+            return response()->json(['error' => 'Eatery not found'], 404);
+        }
+
+        return response()->json($eatery);
     }
 
     /**

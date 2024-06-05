@@ -3,6 +3,7 @@
 use App\Http\Controllers\FoodDrinkController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EateryController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +31,7 @@ Route::get('eateries/all', [EateryController::class, 'index'])->name('eateries.i
 Route::get('eateries/highest_ratings', [EateryController::class, 'topRated'])->name('eateries.topRated');
 
 Route::get('/eateries/user_favourite', [EateryController::class, 'getFavouriteEateries'])->name('eateries.user_favourite');
+
+Route::get('/eateries/{id}', [EateryController::class, 'show'])->name('eateries.show');
+
+Route::post('/reviews/{review_id}', [ReviewController::class, 'updateReviewCount'])->name('reviews.updateReviewCount');

@@ -24,4 +24,9 @@ class Eatery extends Model
     {
         return $this->hasMany(Media::class);
     }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }
