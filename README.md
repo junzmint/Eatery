@@ -7,7 +7,7 @@ cp .env.example .env
 ```
 DB_CONNECTION=mysql
 DB_HOST=eatery_db
-DB_PORT=3308
+DB_PORT=3306
 DB_DATABASE=eatery
 DB_USERNAME=root
 DB_PASSWORD=root
