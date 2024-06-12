@@ -39,7 +39,7 @@ services:
     volumes:
       - ./storage/db-data:/var/lib/mysql
     ports:
-      - 3307:3307
+      - 3308:3308
     environment:
       MYSQL_DATABASE: eatery
       MYSQL_ROOT_PASSWORD: root
